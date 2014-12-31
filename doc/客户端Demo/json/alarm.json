@@ -1,0 +1,117 @@
+[
+    {
+        "method": "alarmin_start",
+        "param": {
+            "channelid": 0
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "alarmin_stop",
+        "param": {
+            "channelid": 0
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "alarmin_get_param",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bEnable": false,
+            "bNormallyClosed": false,
+            "bEnableRecord": false,
+            "bStarting": false,
+            "bBuzzing": false,
+            "bSendtoClient": false,
+            "bSendEmail": false,
+            "u8AlarmNum": 0,
+            "nDelay": 10
+        },
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "alarmin_set_param",
+        "param": {
+            "channelid": 0,
+            "bEnable": false,
+            "bNormallyClosed": false,
+            "bEnableRecord": false,
+            "bStarting": false,
+            "bBuzzing": false,
+            "bSendtoClient": false,
+            "bSendEmail": false,
+            "u8AlarmNum": 0,
+            "nDelay": 10
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "alarmin_b_onduty",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bOnduty": true
+        },
+        "error": {}
+    },
+    {
+        "method": "alarmin_b_alarming",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bAlarming": true
+        },
+        "error": {}
+    },
+    {
+        "method": "alarm_get_param",
+        "param": {},
+        "result": {
+            "delay": 10,
+            "port": 110,
+            "sender": "lfx@jovision.com",
+            "server": "lfx@jovision.com",
+            "username": "lfx",
+            "passwd": "123456",
+            "receiver": [
+                "qlc@jovision.com"
+            ]
+        },
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "alarm_set_param",
+        "param": {
+            "delay": 10,
+            "port": 110,
+            "sender": "lfx@jovision.com",
+            "server": "lfx@jovision.com",
+            "username": "lfx",
+            "passwd": "123456",
+            "receiver": [
+                "qlc@jovision.com"
+            ]
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "method": "record_get",
+        "comments": "enum{ALL,Mon,Tues,Wed,Thur,Fri,Sat,Sun}",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "record_params": [
+                {
+                    "brecording": false,
+                    "normal_record": false,
+                    "time_record": false,
+                    "date": [
+                        {
+                            "week": "Mon",
+                            "time": [
+                                {
+                                    "begin_hour": 12,
+                                    "begin_min": 20,
+                                    "end_hour": 12,
+                                    "end_min": 30
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "record_set",
+        "comments": "enum{ALL,Mon,Tues,Wed,Thur,Fri,Sat,Sun}",
+        "param": {
+            "record_params": [
+                {
+                    "channelid": 0,
+                    "normal_record": false,
+                    "time_record": false,
+                    "date": [
+                        {
+                            "week": "Mon",
+                            "time": [
+                                {
+                                    "begin_hour": 12,
+                                    "begin_min": 20,
+                                    "end_hour": 12,
+                                    "end_min": 30
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    }
+]

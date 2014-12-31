@@ -1,0 +1,10 @@
+
+build-*** 编译相关目录
+doc 文档目录
+doc/sgrpc Server端完整示例。IPC上实现的实际代码
+src 关键代码目录
+test-httpclient 客户端示例，使用HTTP协议通讯
+tools json文件所在目录，以及生成代码的工具、脚本
+client.c 简单UDP客户端示例，与server.c协同
+server.c 简单UDP服务端
+tcpclient.c 客户端示例，可以支持TCP或者模拟的HTTP。用USE_HTTP宏控制

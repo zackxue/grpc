@@ -1,0 +1,47 @@
+[
+    {
+        "method": "privacy_get_param",
+	"comments": "The max number of rects is 4.\nParam x,y,w,h is measured in pixels.",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bEnable": true,
+            "rects": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "w": 100,
+                    "h": 100
+                }
+            ]
+        },
+        "error": {
+            "errcode": -1,
+            "message": "Failed to get privacy parameters!"
+        }
+    },
+    {
+        "method": "privacy_set_param",
+	"comments": "The max number of rects is 4.\nParam x,y,w,h is measured in pixels.",
+        "param": {
+            "channelid": 0,
+            "region": {
+                "bEnable": true,
+                "rects": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 100
+                    }
+                ]
+            }
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Failed to set privacy parameters!"
+        }
+    }
+]

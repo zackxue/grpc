@@ -1,0 +1,58 @@
+[
+    {
+        "method": "account_get_users",
+		"level":"Administrator",
+        "param": {},
+        "result": 
+		{
+			"users":
+			[
+				{
+					"name": "username",
+					"level": "admin,operator,user,anonymous,extended",
+					"description": "This is Adiministrator"
+				}
+			]
+		},
+        "error": {}
+    },
+    {
+        "method": "account_add_user",
+		"level":"Administrator",
+        "param": 
+		{
+			"name": "username",
+			"passwd": "123456",
+			"level": "admin,operator,user,anonymous,extended",
+			"description": "This is Adiministrator"
+		},
+        "result": {},
+        "error": {
+			"errcode": -32602,
+			"message":"Invalid Params"
+		}
+    },
+    {
+        "method": "account_del_user",
+		"level":"Administrator",
+        "param":
+		{
+			"name": "username"
+		},
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "account_modify_user",
+		"level":"Administrator",
+        "param": 
+		{
+			"name": "username",
+			"passwd": "123456",
+			"level": "admin,operator,user,anonymous,extended",
+			"description": "This is Adiministrator"
+		},
+        "result": {},
+        "error": {}
+    }
+]

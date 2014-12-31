@@ -1,0 +1,41 @@
+[
+    {
+        "method": "chnosd_get_param",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bShowOSD": true,
+            "timeFormat": "YYYY-MM-DD hh:mm:ss",
+            "position": "left_top,left_bottom,right_top,right_bottom",
+            "timePos": "left_top,left_bottom,right_top,right_bottom",
+            "channelName": "HD IPC",
+            "bOsdInvColEn": false,
+            "bLargeOSD": false
+        },
+        "error": {
+            "errcode": -1,
+            "message": "Failed to get OSD parameters!"
+        }
+    },
+    {
+        "method": "chnosd_set_param",
+        "param": {
+            "channelid": 0,
+            "attr": {
+                "bShowOSD": true,
+                "timeFormat": "YYYY-MM-DD hh:mm:ss",
+                "position": "left_top,left_bottom,right_top,right_bottom",
+                "timePos": "left_top,left_bottom,right_top,right_bottom",
+                "channelName": "HD IPC",
+                "bOsdInvColEn": false,
+                "bLargeOSD": false
+            }
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Failed to set OSD parameters!"
+        }
+    }
+]

@@ -1,0 +1,138 @@
+[
+    {
+        "method": "broadcast_discovery",
+        "param": {},
+        "result": 
+		{
+            "type": "IPC/DVR/NVR",
+            "sid": "A361/N65465413",
+            "ip": "127.0.0.1",
+            "port": "9101",
+            "channelcnt": 4
+        },
+        "error": {}
+    },
+    {
+        "method": "broadcast_get_inet",
+        "comments": "The value of quality ranges from 0 to 100.",
+        "param": {},
+        "result": 
+		{
+            "iface": "eth,ppp,wifi",
+            "eth": 
+			{
+                "name": "eth0",
+                "bDHCP": true,
+                "addr": "192.168.7.160",
+                "mask": "255.255.255.0",
+                "gateway": "192.168.7.1",
+                "mac": "E0:62:90:33:58:C7",
+                "dns": "202.102.128.68"
+            },
+            "ppp": 
+			{
+                "name": "adsl",
+                "username": "qlc",
+                "passwd": "123456"
+            },
+            "wifi": 
+			{
+                "name": "hehe",
+                "quality": 100,
+                "keystat": -1,
+                "iestat": "wpa,wpa2,wep,plain",
+                "bDHCP": true,
+                "addr": "192.168.7.160",
+                "mask": "255.255.255.0",
+                "gateway": "192.168.7.1",
+                "mac": "E0:62:90:33:58:C7",
+                "dns": "202.102.128.68"
+            }
+        },
+        "error": 
+		{
+            "errcode": "-1",
+            "message": "Failed to get network configuration!"
+        }
+    },
+    {
+        "method": "broadcast_eth_set",
+        "param": 
+		{
+            "name": "eth0",
+            "bDHCP": true,
+            "addr": "192.168.7.160",
+            "mask": "255.255.255.0",
+            "gateway": "192.168.7.1",
+            "dns": "202.102.128.68"
+        },
+        "result": {},
+        "error": 
+		{
+            "errcode": "-1",
+            "message": "Failed to set eth0 configuration!"
+        }
+    },
+    {
+        "method": "broadcast_ppp_set",
+        "param": 
+		{
+            "name": "adsl",
+            "username": "qlc",
+            "passwd": "123456"
+        },
+        "result": {},
+        "error": 
+		{
+            "errcode": "-1",
+            "message": "Failed to set pppoe!"
+        }
+    },
+    {
+        "method": "broadcast_wifi_connect",
+        "param": 
+		{
+            "name": "hehe",
+            "passwd": "hehe12345"
+        },
+        "result": {},
+        "error": 
+		{
+            "errcode": "-1",
+            "message": "Failed to connect to AP!"
+        }
+    },
+    {
+        "method": "broadcast_wifi_list_ap",
+        "comments": "The value of quality ranges from 0 to 100.",
+        "param": 
+		{
+            "bResearch": true
+        },
+        "result": 
+		{
+            "apList": 
+			[
+                {
+                    "name": "hehe",
+                    "passwd": "hehe12345",
+                    "quality": 100,
+                    "keystat": -1,
+                    "iestat": "wpa,wpa2,wep,plain"
+                },
+                {
+                    "name": "jovision",
+                    "passwd": "jovision12345",
+                    "quality": 100,
+                    "keystat": -1,
+                    "iestat": "wpa,wpa2,wep,plain"
+                }
+            ]
+        },
+        "error": 
+		{
+            "errcode": "-1",
+            "message": "Failed to list APs!"
+        }
+    }
+]

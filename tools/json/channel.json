@@ -1,0 +1,91 @@
+[
+    {
+        "method": "channel_get",
+        "param": {},
+        "result": 
+		{
+            "channels": 
+			[
+                {
+                    "type": "IPC/DVR/NVR",
+                    "sid": "A361/N65465413",
+                    "protocol": "cloudsee/rtsp/onvif",
+                    "bMainStream": true,
+                    "bSubStream": false,
+                    "mainstream": "rtsp://127.0.0.1/live0.264",
+                    "substream": "rtsp://127.0.0.1/live1.264",
+                    "ip": "127.0.0.1",
+                    "port": "9101",
+                    "channelcnt": 4,
+                    "channelid": 0,
+                    "name": "admin",
+                    "passwd": "123456",
+                    "streamserverip": "127.0.0.1",
+                    "streamserverport": 8000
+                }
+            ]
+        },
+        "error": {}
+    },
+    {
+        "method": "channel_add",
+        "param": 
+		{
+            "channels": 
+			[
+                {
+                    "type": "IPC/DVR/NVR",
+                    "sid": "A361/N65465413",
+                    "protocol": "cloudsee/rtsp/onvif",
+                    "bMainStream": true,
+                    "bSubStream": false,
+                    "mainstream": "rtsp://127.0.0.1/live0.264",
+                    "substream": "rtsp://127.0.0.1/live1.264",
+                    "ip": "127.0.0.1",
+                    "port": "9101",
+                    "channelcnt": 4,
+                    "channelid": 0,
+                    "name": "admin",
+                    "passwd": "123456",
+                    "streamserverip": "127.0.0.1",
+                    "streamserverport": 8000
+                }
+            ]
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "channel_remove",
+        "param": {
+            "type": "IPC/DVR/NVR",
+            "sid": "A361/N65465413",
+            "protocol": "cloudsee/rtsp/onvif"
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "channel_modify",
+        "param": 
+		{
+            "type": "IPC/DVR/NVR",
+            "sid": "A361/N65465413",
+            "protocol": "cloudsee/rtsp/onvif",
+            "bMainStream": true,
+            "bSubStream": false,
+            "mainstream": "rtsp://127.0.0.1/live0.264",
+            "substream": "rtsp://127.0.0.1/live1.264",
+            "ip": "127.0.0.1",
+            "port": "9101",
+            "channelcnt": 4,
+            "channelid": 0,
+            "name": "admin",
+            "passwd": "123456",
+            "streamserverip": "127.0.0.1",
+            "streamserverport": 8000
+        },
+        "result": {},
+        "error": {}
+    }
+]

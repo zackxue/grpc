@@ -1,0 +1,2 @@
+/usr/bin/ar cr libgrpc.a  CMakeFiles/grpc.dir/grpc.c.o CMakeFiles/grpc.dir/md5.c.o CMakeFiles/grpc.dir/generate/ipc_s_userdef.c.o CMakeFiles/grpc.dir/generate/ipc.c.o CMakeFiles/grpc.dir/generate/ipc_c_userdef.c.o
+/usr/bin/ranlib libgrpc.a

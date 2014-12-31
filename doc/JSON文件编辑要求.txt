@@ -1,0 +1,49 @@
+JSON是一种文本格式，通过这种格式为客户端（比如PC客户端或者移动客户端）和服务器端（IPC,NVR,DVR）之间提供了一种新的通信协议。
+将sport中的接口转换为JSON文件的过程中需要注意以下几点：
+
+1、必须充分理解每个接口是干什么用的，有什么意义，如果不是用于客户端和服务器端通信的接口不要加到JSON文件中。
+
+2、method是方法名，对应于sport中的函数接口，需要将sp_前缀去掉，param是输入参数，result是输出参数，error是出错信息，comments中添加一些注释，生成C代码之后会在头文件中体现。
+
+3、参数要合理优化，例如：
+｛
+	"delay": 10,
+	"port": 110,
+	"sender": "lfx@jovision.com",
+	"server": "smtp.jovision.com",
+	"username": "lfx@jovision.com",
+	"passwd": "123456",
+	"receivers": [
+		"qlc@jovision.com",
+		"xxx@jovision.com"
+	]
+｝
+后面的参数，尽量带一些提示信息进去，合理利用数组，该变成数组的就变数组,receivers就是一个数组。
+
+4、函数参数中如果只包含一个结构体，要将其展开，例如：
+        "result": {
+            "HWInfo": {
+                "type": "IPC",
+                "hardware": "V1.0",
+                "sn": "112233",
+                "firmware": "V1.0",
+                "manufacture": "JOVISION",
+                "model": "JVS-N71-HD",
+                "ptzBsupport": true,
+                "wifiBsupport": true,
+                "streamCnt": 3
+            }
+        }
+需要将HWInfo层去掉：
+        "result": {
+		"type": "IPC",
+		"hardware": "V1.0",
+		"sn": "112233",
+		"firmware": "V1.0",
+		"manufacture": "JOVISION",
+		"model": "JVS-N71-HD",
+		"ptzBsupport": true,
+		"wifiBsupport": true,
+		"streamCnt": 3
+        }
+5、如果期望某个值是double类型的，要将其置为小数，比如1.1，如果是1.0，会被认为是整数，变成int。

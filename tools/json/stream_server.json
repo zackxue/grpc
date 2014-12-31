@@ -1,0 +1,29 @@
+[
+    {
+        "method": "stream_get_service",
+        "param": 
+		{
+            "type": "IPC/DVR/NVR",
+            "sid": "A361/N65465413",
+            "protocol": "cloudsee/rtsp/onvif",
+            "bMainStream": true,
+            "bSubStream": false,
+            "mainstream": "rtsp://127.0.0.1/live0.264",
+            "substream": "rtsp://127.0.0.1/live1.264",
+            "ip": "127.0.0.1",
+            "port": "9101",
+            "channelcnt": 4,
+            "channelid": 0
+        },
+        "result": 
+		{
+            "sid": "A361/N65465413",
+            "protocol": "cloudsee/rtsp/onvif",
+            "url": "rtsp://127.0.0.1/live0.264",
+            "ip": "127.0.0.1",
+            "port": "9101",
+            "channelid": 0
+        },
+        "error": {}
+    }
+]

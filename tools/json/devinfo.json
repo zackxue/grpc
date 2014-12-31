@@ -1,0 +1,104 @@
+[
+    {
+        "method": "dev_get_hwinfo",
+        "param": {},
+        "result": {
+            "type": "IPC",
+            "hardware": "V1.0",
+            "sn": "112233",
+            "firmware": "V1.0",
+            "manufacture": "JOVISION",
+            "model": "JVS-N71-HD",
+            "bPtzSupport": true,
+            "bWifiSupport": true,
+	    "channelCnt": 1,
+            "streamCnt": 3,
+	    "ystID":"A402153844"
+        },
+        "error": {}
+    },
+    {
+        "method": "dev_get_info",
+        "param": {},
+        "result": {
+            "bDiscoverable": true,
+            "hostname": "HD IPC",
+            "name": "HD IPC",
+	    "rebootDay": "never,everyday,everysunday,everymonday,everytuesday,everywednesday,everythursday,everyfriday,everysaturday",
+	    "rebootHour":0
+        },
+        "error": {}
+    },
+    {
+        "method": "dev_set_info",
+        "param": {
+            "bDiscoverable": true,
+            "hostname": "HD IPC",
+            "name": "HD IPC",
+	    "rebootDay": "never,everyday,everysunday,everymonday,everytuesday,everywednesday,everythursday,everyfriday,everysaturday",
+	    "rebootHour":0
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "dev_stime",
+        "comments": "Param tmsec means the seconds elapsed since 1970.",
+        "param": {
+            "tmsec": 1387584000,
+            "tz": "8.5"
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "dev_gtime",
+        "comments": "Param tmsec means the seconds elapsed since 1970.",
+        "param": {},
+        "result": {
+            "tmsec": 1387584000,
+            "tz": "8.5"
+        },
+        "error": {}
+    },
+    {
+        "method": "dev_ntp_set",
+        "param": {
+            "bEnableNtp": true,
+	    "sntpInterval": 24,
+            "servers": [
+                "ntp.fudan.edu.cn"
+            ]
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "dev_ntp_get",
+        "param": {},
+        "result": {
+            "bEnableNtp": true,
+	    "sntpInterval": 24,
+            "servers": [
+                "ntp.fudan.edu.cn"
+            ]
+        },
+        "error": {}
+    },
+    {
+        "method": "dev_reboot",
+        "param": {
+            "delaymSec": 1000
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "dev_factory_default",
+        "param": {
+            "bHard": true
+        },
+        "result": {},
+        "error": {}
+    }
+]

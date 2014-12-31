@@ -1,0 +1,64 @@
+[
+    {
+        "method": "ai_get_param",
+        "comments": "sampleRate : 8000,11025,16000,22050,24000,32000,44100,48000;\nbitWidth : 8,16,32",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "sampleRate": 8000,
+            "bitWidth": 16,
+            "encType": "pcm,g711a,g711u,g726_16k,g726_24k,g726_32k,g726_40k,aac,adpcm"
+        },
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "ai_set_param",
+        "comments": "sampleRate : 8000,11025,16000,22050,24000,32000,44100,48000;\nbitWidth : 8,16,32",
+        "param": {
+            "channelid": 0,
+            "audioAttr": {
+                "sampleRate": 8000,
+                "bitWidth": 16,
+                "encType": "pcm,g711a,g711u,g726_16k,g726_24k,g726_32k,g726_40k,aac,adpcm"
+            }
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "ao_get_param",
+        "comments": "sampleRate : 8000,11025,16000,22050,24000,32000,44100,48000;\nbitWidth : 8,16,32",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "sampleRate": 8000,
+            "bitWidth": 16,
+            "encType": "pcm,g711a,g711u,g726_16k,g726_24k,g726_32k,g726_40k,aac,adpcm"
+        },
+        "error": {
+            "errcode": 0
+        }
+    },
+    {
+        "method": "ao_set_param",
+        "comments": "sampleRate : 8000,11025,16000,22050,24000,32000,44100,48000;\nbitWidth : 8,16,32",
+        "param": {
+            "channelid": 0,
+            "audioAttr": {
+                "sampleRate": 8000,
+                "bitWidth": 16,
+                "encType": "pcm,g711a,g711u,g726_16k,g726_24k,g726_32k,g726_40k,aac,adpcm"
+            }
+        },
+        "result": {},
+        "error": {
+            "errcode": 0
+        }
+    }
+]

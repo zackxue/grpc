@@ -1,0 +1,35 @@
+[
+    {
+        "method": "log_get",
+        "comments": "type: enum{SYSTEM,CONFIG,DATA_MANGE,ALARM,RECORD,USER,FILE_OPER,ALL}.\nnSub: affiliated log counts",
+        "param": {
+            "date": "2014-11-18",
+            "type": "SYSTEM"
+        },
+        "result": {
+            "log_items": [
+                {
+                    "time": "2014-11-18 08:43:57",
+                    "strlog": "the happened events",
+                    "bNetuser": false,
+                    "bmain": true,
+                    "nSub": 0,
+                    "type": "SYSTEM",
+                    "username": "system"
+                }
+            ]
+        },
+        "error": {
+            "errcode": -1
+        }
+    },
+    {
+        "method": "log_clear",
+        "comments": "type: enum{SYSTEM,CONFIG,DATA_MANGE,ALARM,RECORD,USER,FILE_OPER,ALL}.",
+        "param": {},
+        "result": {},
+        "error": {
+            "errcode": -1
+        }
+    }
+]

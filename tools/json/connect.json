@@ -1,0 +1,32 @@
+[
+    {
+        "method": "connection_get_list",
+        "param": {
+            "conType": "all,jovision,rtsp,gb28181,psia,other"
+        },
+        "result": {
+            "connectionList": [
+                {
+                    "conType": "jovision",
+                    "key": 1,
+                    "addr": "192.168.7.160",
+                    "user": "admin"
+                }
+            ]
+        },
+        "error": {}
+    },
+    {
+        "method": "connection_breakoff",
+        "param": {
+            "connectionList": [
+                {
+                    "conType": "jovision",
+                    "key": 1
+                }
+            ]
+        },
+        "result": {},
+        "error": {}
+    }
+]

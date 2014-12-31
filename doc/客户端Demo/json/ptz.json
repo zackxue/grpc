@@ -1,0 +1,272 @@
+[
+    {
+        "method": "ptz_move_start",
+        "comments": "ptz speed ranges from -254 to 254;\n > 0, pan left or tilt up or zoom in, otherwise the opposite direction.",
+        "param": {
+            "channelid": 0,
+            "panLeft": -254,
+            "tiltUp": 0,
+            "zoomIn": 254
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_move_stop",
+        "param": {
+            "channelid": 0
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_fi_start",
+        "comments": "fi speed ranges from -254 to 254;\n > 0, focus far or iris open, otherwise the opposite direction.",
+        "param": {
+            "channelid": 0,
+            "focusFar": -254,
+            "irisOpen": 254
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_fi_stop",
+        "param": {
+            "channelid": 0
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_preset_set",
+        "comments": "errcode : \n 0 : success;\n -1 : illegal preset number;\n -2 : preset already exists;\n -3 : no enough preset number.",
+        "param": {
+            "channelid": 0,
+            "presetno": 1,
+            "name": "preset1"
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Illegal preset number."
+        }
+    },
+    {
+        "method": "ptz_preset_locate",
+        "param": {
+            "channelid": 0,
+            "presetno": 1
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_preset_delete",
+        "param": {
+            "channelid": 0,
+            "presetno": 1
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_presets_get",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "presetsList": [
+                {
+                    "presetno": 1,
+                    "name": "preset1"
+                }
+            ]
+        },
+        "error": {}
+    },
+    {
+        "method": "ptz_patrol_create",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "index": 1
+        },
+        "error": {}
+    },
+    {
+        "method": "ptz_patrol_delete",
+        "param": {
+            "channelid": 0,
+            "index": 1
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrols_get",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "patrolsList": [
+                {
+                    "patrolid": 1
+                }
+            ]
+        },
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrol_get_nodes",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1
+        },
+        "result": {
+            "patrolNodesList": [
+                {
+                    "preset": {
+                        "presetno": 1,
+                        "name": "preset1"
+                    },
+                    "staySeconds": 10
+                }
+            ]
+        },
+        "error": {}
+    },
+    {
+        "method": "ptz_patrol_add_node",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1,
+            "presetno": 1,
+            "staySeconds": 10
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_patrol_del_node",
+        "comments": "presetindex: the index of this node in patrol, start from 0. if -1, delete all the nodes in patrol.",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1,
+            "presetindex": 0
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrol_set_speed",
+        "comments": "Speed ranges from 0 to 254.",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1,
+            "speed": 254
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrol_set_stay_seconds",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1,
+            "staySeconds": 10
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrol_locate",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "No exist!"
+        }
+    },
+    {
+        "method": "ptz_patrol_stop",
+        "param": {
+            "channelid": 0,
+            "patrolid": 1
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_scan_set_left",
+        "param": {
+            "channelid": 0,
+            "groupid": 1
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_scan_set_right",
+        "param": {
+            "channelid": 0,
+            "groupid": 1
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_scan_start",
+        "param": {
+            "channelid": 0,
+            "groupid": 1
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_scan_stop",
+        "param": {
+            "channelid": 0,
+            "groupid": 1
+        },
+        "result": {},
+        "error": {}
+    },
+    {
+        "method": "ptz_scan_set_speed",
+        "comments": "Speed ranges from 0 to 254.",
+        "param": {
+            "channelid": 0,
+            "groupid": 1,
+            "speed": 254
+        },
+        "result": {},
+        "error": {}
+    }
+]

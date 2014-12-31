@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/tcpclient.dir/tcpclient.c.o  -o tcpclient  -L/root/src/code/grpc/build-x86 -rdynamic -static src/libgrpc.a cJSON/libcJSON.a -lrt -lpthread -lstdc++ -lresolv -lm -Wl,-rpath,/root/src/code/grpc/build-x86 

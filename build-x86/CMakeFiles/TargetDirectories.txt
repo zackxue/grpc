@@ -1,0 +1,5 @@
+/root/src/code/grpc/build-x86/cJSON/CMakeFiles/cJSON.dir
+/root/src/code/grpc/build-x86/CMakeFiles/client.dir
+/root/src/code/grpc/build-x86/src/CMakeFiles/grpc.dir
+/root/src/code/grpc/build-x86/CMakeFiles/server.dir
+/root/src/code/grpc/build-x86/CMakeFiles/tcpclient.dir

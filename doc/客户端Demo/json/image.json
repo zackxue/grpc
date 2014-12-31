@@ -1,0 +1,70 @@
+[
+    {
+        "method": "image_get_param",
+        "comments": "The value of contrast, brightness, saturation and sharpen ranges from 0 to 255.",
+        "param": {},
+        "result": {
+            "contrast": 128,
+            "brightness": 128,
+            "saturation": 128,
+            "sharpen": 128,
+            "exposureMax": 3,
+            "exposureMin": 100000,
+            "scene": "indoor,outdoor,default,soft",
+            "daynightMode": "auto,alwaysDay,alwaysNight,timer",
+            "dayStart": {
+                "hour": 0,
+                "minute": 0
+            },
+            "dayEnd": {
+                "hour": 0,
+                "minute": 0
+            },
+            "bEnableAWB": true,
+            "bEnableMI": true,
+            "bEnableST": true,
+            "bEnableNoC": false,
+            "bEnableWDynamic": false,
+            "bAutoLowFrameEn": false,
+            "bNightOptimization": false
+        },
+        "error": {
+            "errcode": -1,
+            "message": "Failed to get image parameters!"
+        }
+    },
+    {
+        "method": "image_set_param",
+        "comments": "The value of contrast, brightness, saturation and sharpen ranges from 0 to 255.",
+        "param": {
+            "contrast": 128,
+            "brightness": 128,
+            "saturation": 128,
+            "sharpen": 128,
+            "exposureMax": 3,
+            "exposureMin": 100000,
+            "scene": "indoor,outdoor,default,soft",
+            "daynightMode": "auto,alwaysDay,alwaysNight,timer",
+            "dayStart": {
+                "hour": 0,
+                "minute": 0
+            },
+            "dayEnd": {
+                "hour": 0,
+                "minute": 0
+            },
+            "bEnableAWB": true,
+            "bEnableMI": true,
+            "bEnableST": true,
+            "bEnableNoC": false,
+            "bEnableWDynamic": false,
+            "bAutoLowFrameEn": false,
+            "bNightOptimization": false
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Failed to set image parameters!"
+        }
+    }
+]

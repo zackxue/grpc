@@ -1,0 +1,38 @@
+[
+    {
+        "method": "storage_get_info",
+        "param": {},
+        "result": {
+            "size": 1024,
+            "cylinder": 1,
+            "partSize": 1,
+            "partition": 1,
+            "entryCount": 1,
+            "status": 1,
+            "curPart": 1,
+            "bNocard": false,
+            "bMounted": true,
+            "partSpace": [
+                1024
+            ],
+            "freeSpace": [
+                1024
+            ]
+        },
+        "error": {
+            "errcode": -1,
+            "message": "Failed to get storage information!"
+        }
+    },
+    {
+        "method": "storage_format",
+        "param": {
+            "diskNum": 0
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Failed to format SDCard"
+        }
+    }
+]

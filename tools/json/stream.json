@@ -1,0 +1,111 @@
+[
+    {
+        "method": "stream_get_param",
+        "param": {
+            "channelid": 0,
+            "streamid": 0
+        },
+        "result": {
+            "width": 1280,
+            "height": 720,
+            "frameRate": 25,
+            "bitRate": 1024,
+            "ngop_s": 2,
+            "quality": 50,
+            "rcMode": "cbr,vbr,fixQP"
+        },
+        "error": {
+            "errcode": -32602,
+            "message": "Invalid Params"
+        }
+    },
+    {
+        "method": "stream_get_params",
+        "param": {},
+        "result": {
+            "streams": [
+                {
+                    "channelid": 0,
+                    "streamid": 0,
+                    "width": 1280,
+                    "height": 720,
+                    "frameRate": 25,
+                    "bitRate": 1024,
+                    "ngop_s": 2,
+                    "quality": 50,
+                    "rcMode": "cbr,vbr,fixQP"
+                }
+            ]
+        },
+        "error": {
+            "errcode": -32602,
+            "message": "Invalid Params"
+        }
+    },
+    {
+        "method": "stream_set_param",
+        "param": {
+            "channelid": 0,
+            "streamid": 0,
+            "width": 1280,
+            "height": 720,
+            "frameRate": 25,
+            "bitRate": 1024,
+            "ngop_s": 2,
+            "quality": 50,
+            "rcMode": "cbr,vbr,fixQP"
+        },
+        "result": {},
+        "error": {
+            "errcode": -32602,
+            "message": "Invalid Params"
+        }
+    },
+    {
+        "method": "stream_get_ability",
+        "param": {
+            "channelid": 0,
+            "streamid": 0
+        },
+        "result": {
+            "resolutions": [
+                {
+                    "width": 1280,
+                    "height": 720
+                }
+            ],
+            "inputRes": {
+                "width": 1280,
+                "height": 720
+            },
+            "maxFramerate": 30,
+            "minFramerate": 1,
+            "maxQuality": 100,
+            "minQuality": 0,
+            "maxNGOP": 360,
+            "minNGOP": 1,
+            "maxKBitrate": 4096,
+            "minKBitrate": 128
+        },
+        "error": {
+            "errcode": -32602,
+            "message": "Invalid Params"
+        }
+    },
+    {
+        "method": "stream_snapshot",
+        "param": {
+            "channelid": 0,
+            "streamid": 0,
+            "width": 400,
+            "height": 224
+        },
+        "result": {
+            "snapshot": "photos with base64code"
+        },
+        "error": {
+            "errcode": -32602,
+            "message": "Invalid Params"
+        }
+    }
+]

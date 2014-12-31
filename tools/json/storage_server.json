@@ -1,0 +1,109 @@
+[
+    {
+        "method": "storage_get_info",
+        "param": {},
+        "result": 
+        {
+          	"disks": 
+	      	[
+	      		{
+    	            "disk_str": "sdb",
+    	            "capacity": 4194304,
+    	            "status": "Initialized,Uninitialized"
+	      		},
+	      		{
+	        		"disk_str": "sdc",
+    	            "capacity": 4194304,
+    	            "status": "Initialized,Uninitialized,Initializing(30%)"
+	      		},
+	      		{
+	        		"disk_str": "sdc",
+    	            "capacity": 4194304,
+    	            "status": "Initialized,Uninitialized"
+	  			}
+	  		]
+    	},
+        "error": 
+        {
+            "errcode": -1,
+            "message": "Failed to get storage information!"
+        }
+    },
+    {
+        "method": "storage_start_intial_disk",
+        "param": 
+        {
+            "disk_str": "sdb"
+        },
+        "result": 
+        {
+            "disk_str": "sdb",
+            "start_initial": "yes or no"
+        },
+        "error": 
+        {
+            "errcode": -1,
+            "message": "Failed to start initialize disk"
+        }
+    },
+    {
+        "method": "storage_get_disk_initial_rate",
+        "param": 
+        {
+            "disk_str": "sdb"
+        },
+        "result": 
+        {
+            "disk_str": "sdb",
+            "rate": 100
+        },
+        "error": 
+        {
+        }
+    },	
+    {
+        "method": "storage_get_record_fragments",
+    	"param":
+    	{
+		    "sid": "A361/N65465413",
+			"start_year": 2014,
+			"start_month": 12,
+			"start_day": 12,
+			"start_hour": 12,
+			"start_minute": 59,
+			"start_second": 59,
+			"end_year": 2014,
+			"end_month": 12,
+			"end_day": 12,
+			"end_hour": 23,
+			"end_minute": 59,
+			"end_second": 59
+		},
+		"result": 
+		{
+		    "fragments":
+		    [
+				{
+					"sid": "A361/N65465413",
+					"start_year": 2014,
+					"start_month": 12,
+					"start_day": 12,
+					"start_hour": 12,
+					"start_minute": 59,
+					"start_second": 59,
+					"end_year": 2014,
+					"end_month": 12,
+					"end_day": 12,
+					"end_hour": 23,
+					"end_minute": 59,
+					"end_second": 59
+				}
+		    ]
+		},
+		"error": 
+		{
+            "errcode": -1,
+            "message": "Failed to get record fragments"
+        }
+    }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "method": "screen_get_ability",
+    "comments": "Get screen ability.The max number of elements in nModeList array and freeSpace array is 16.",
+    "param": {
+      "screen": 0
+    },
+    "result": {
+      "nMaxChn": 9,
+      "nModeList": [
+        1,
+        4,
+        8,
+        9
+      ]
+    },
+    "error": {}
+  },
+  {
+    "method": "screen_get_display",
+    "comments": "Get screen display mode.",
+    "param": {
+      "screen": 0
+    },
+    "result": {
+      "nViewMode": 16,
+      "nViewWindow": 16,
+      "nSelected": 0,
+      "nStartPos": 0
+    },
+    "error": {}
+  },
+  {
+    "method": "screen_set_display",
+    "comments": "Set screen display mode.",
+    "param": {
+      "screen": 0,
+      "nViewMode": 16,
+      "nViewWindow": 16,
+      "nSelected": 0,
+      "nStartPos": 0
+    },
+    "result": {},
+    "error": {}
+  },
+  {
+    "method": "screen_get_tour",
+    "comments": "Get tour info.",
+    "param": {
+      "screen": 0
+    },
+    "result": {
+      "bTour": true,
+      "secInterval": 5
+    },
+    "error": {}
+  },
+  {
+    "method": "screen_set_tour",
+    "comments": "Set tour",
+    "param": {
+      "screen": 0,
+      "stTour": {
+        "bTour": 0,
+        "secInterval": 5
+      }
+    },
+    "result": {},
+    "error": {}
+  },
+  {
+    "method": "screen_get_screen",
+    "comments": "Get screen info.",
+    "param": {},
+    "result": {
+      "nBright": 30,
+      "nContrast": 35,
+      "nSaturation": 45,
+      "stResolution": {
+        "nW": 1280,
+        "nH": 1024
+      },
+      "stList": [
+        {
+          "nW": 1024,
+          "nH": 768
+        },
+        {
+          "nW": 1280,
+          "nH": 800
+        },
+        {
+          "nW": 1280,
+          "nH": 1024
+        },
+        {
+          "nW": 1440,
+          "nH": 900
+        },
+        {
+          "nW": 1920,
+          "nH": 1080
+        }
+      ]
+    },
+    "error": {}
+  },
+  {
+    "method": "screen_set_screen",
+    "comments": "Set screen info.",
+    "param": {
+      "nBright": 50,
+      "nContrast": 55,
+      "nSaturation": 55,
+      "stResolution": {
+        "nW": 1280,
+        "nH": 1024
+      }
+    },
+    "result": {},
+    "error": {}
+  }
+]

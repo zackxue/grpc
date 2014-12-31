@@ -1,0 +1,69 @@
+[
+  {
+    "method": "vsource_add_vs",
+    "comments": "Add a video source to screen.",
+    "param": {
+      "screen": 0,
+      "nCh": 1,
+      "stVs": {
+        "acGroup": "A",
+        "nYSTNO": 219329020,
+        "acDevIP": "192.168.6.223",
+        "nPort": 9101,
+        "nChannel": 0,
+        "acID": "abc",
+        "acPW": "123",
+        "nIpcType": "IPC_TYPE_JV, IPC_TYPE_ONVIF,IPC_TYPE_JIEGAO,IPC_TYPE_HIK,IPC_TYPE_DAHUA,IPC_TYPE_JULONG,IPC_TYPE_NVSTCP",
+        "acServiceAddr": ""
+      }
+    },
+    "result": {},
+    "error": {}
+  },
+  {
+    "method": "vsource_delete_vs",
+    "comments": "Delete a video source.",
+    "param": {
+      "screen": 0,
+      "nCh": 1
+    },
+    "result": {},
+    "error": {}
+  },
+  {
+    "method": "vsource_modify_vs",
+    "comments": "Modify video source.",
+    "param": {
+      "screen": 0,
+      "nCh": 1,
+      "stVs": {
+        "acGroup": "A",
+        "nYSTNO": 219329020,
+        "acDevIP": "192.168.6.223",
+        "nPort": 9101,
+        "nChannel": 0,
+        "acID": "abc",
+        "acPW": "123",
+        "nIpcType": "IPC_TYPE_JV,IPC_TYPE_ONVIF,IPC_TYPE_JIEGAO,IPC_TYPE_HIK,IPC_TYPE_DAHUA,IPC_TYPE_JULONG,IPC_TYPE_NVSTCP",
+        "acServiceAddr": ""
+      }
+    },
+    "result": {},
+    "error": {}
+  },
+  {
+    "method": "vsource_get_chn_status",
+    "comments": "Get channle status.",
+    "param": {
+      "screen": 0,
+      "nCh": 1
+    },
+    "result": 
+    {
+      "screen": 0,
+      "nCh": 1,
+      "status": "no video,disconnect,connecting,connected,password error,connect timeout,server stop,connect break,decoder failed,decoder over range,over link count,IP conflict"
+    },
+    "error": {}
+  }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "method": "mdetect_set_param",
+        "comments": "The max number of rects is 4, 0 means full screen motion detect.\nParam nSensitivity ranges from 0 to 255.\nParam x,y,w,h is measured in pixels.",
+        "param": {
+            "channelid": 0,
+            "md": {
+                "bEnable": true,
+                "bEnableRecord": false,
+                "sensitivity": 128,
+                "delay": 10,
+                "bOutClient": false,
+                "bOutEmail": false,
+                "rects": [
+                    {
+                        "x": 0,
+                        "y": 0,
+                        "w": 100,
+                        "h": 100
+                    }
+                ]
+            }
+        },
+        "result": {},
+        "error": {
+            "errcode": -1,
+            "message": "Failed to set motion detect parameters!"
+        }
+    },
+    {
+        "method": "mdetect_get_param",
+        "comments": "The max number of rects is 4, 0 means full screen motion detect.\nParam nSensitivity ranges from 0 to 255.\nParam x,y,w,h is measured in pixels.",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bEnable": true,
+            "bEnableRecord": false,
+            "sensitivity": 128,
+            "delay": 10,
+            "bOutClient": false,
+            "bOutEmail": false,
+            "rects": [
+                {
+                    "x": 0,
+                    "y": 0,
+                    "w": 100,
+                    "h": 100
+                }
+            ]
+        },
+        "error": {
+            "errcode": -1,
+            "message": "Failed to get motion detect parameters!"
+        }
+    },
+    {
+        "method": "mdetect_balarming",
+        "param": {
+            "channelid": 0
+        },
+        "result": {
+            "bMdetectAlarming": true
+        },
+        "error": {}
+    }
+]

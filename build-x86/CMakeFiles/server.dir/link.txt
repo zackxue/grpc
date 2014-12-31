@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/server.dir/server.c.o  -o server  -L/root/src/code/grpc/build-x86 -rdynamic src/libgrpc.a cJSON/libcJSON.a -lrt -lpthread -lstdc++ -lresolv -lm -Wl,-rpath,/root/src/code/grpc/build-x86 
